@@ -1,0 +1,854 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    background-color: #2b2b2b;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 50px;
+}
+
+.account {
+    color: white;
+}
+
+nav ul{
+    margin-top: -20;
+    font-weight: 600;
+}
+
+header ul li {
+    display: inline-block;
+    list-style: none;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 10px;
+}
+
+header ul li:hover {
+    background-color: #767676;
+    border-radius: 10px;
+}
+
+header ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+header nav img {
+    width: 170px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+.head {
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    font-weight: 600;
+}
+
+.head .x2 ul li{
+    margin-right: 20px;
+    display: inline-block;
+    line-height: 1.5;
+}
+
+
+.head .x2 ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+
+.head .x2 ul li:hover {
+    box-shadow: 0 1px 0 0 black;
+}
+
+.product {
+    padding: 20px;
+}
+
+.product .info {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.product .info img {
+    border-radius: 10px;
+    width: 50vw;
+    height: 30vw;
+}
+
+.product .info .desc .baslik{
+   font-weight: 600;
+}
+
+.product .info .desc h1 {
+    margin-top: 40px;
+    font-weight: 600;
+    font-size: 45px;
+    color: #2b2b2b;
+}
+
+.product .info .desc h6 {
+    margin-top: 20px;
+    font-size: 15px;
+    font-weight: 600;
+    color: #2b2b2b;
+}
+
+.feature {
+    margin-top: 20px;
+}
+
+.product .info .desc ul li {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    list-style: none;
+}
+
+.product .info .desc ul li i {
+    margin-right: 10px;
+}
+
+.product .info .desc button {
+    margin-top: 10px;
+    padding: 10px;
+    display: block;
+    height: 50px;
+    width: 300px;
+    background-color: black;
+    color: white;
+    font-weight: 600;
+}
+
+.product .info .desc h5 {
+    margin-top: 30px;
+    color: #2b2b2b;
+    font-size: 12px;
+}
+
+.product .info .desc .score {
+    margin-top: 40px;
+}
+
+.product .info .desc .score i {
+    color: rgb(18, 81, 39);
+}
+
+.product .info .desc .score span {
+    font-size: 15px;
+}
+
+.product .info .desc .score a{
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+}
+
+.ques {
+    padding: 20px;
+    margin-top: 30px;
+    margin-left: 70px;
+    width: fit-content;
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 100; /* Diğer öğelerin üzerinde olması için */
+}
+
+.fixedques {
+    padding: 20px;
+    margin-top: 30px;
+    margin-left: 70px;
+    position: fixed;
+    top: 0; /* Sayfanın başından itibaren yapışkan olacak şekilde */
+    z-index: 100; /* Diğer öğelerin üzerinde olması için */
+}
+
+
+.ques ul {
+    display: inline;
+    padding: 15px;
+    border-radius: 20px;
+    background-color: #2b2b2b;
+    margin: 0; /* UL elemanının varsayılan margin'ini sıfırla */
+    list-style: none; /* Bullet'leri gizle */
+}
+
+.fixedques ul li {
+    border-radius: 20px;
+    padding: 10px;
+    list-style: none;
+    display: inline;
+    margin-right: 10px;
+}
+
+.ques ul li {
+    border-radius: 20px;
+    padding: 10px;
+    list-style: none;
+    display: inline;
+    margin-right: 10px;
+}
+
+.fixedques ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+.ques ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+.fixedques ul .active {
+    background-color: black;
+    color: white;
+}
+
+.ques ul .active {
+    background-color: black;
+    color: white;
+}
+
+.deneme {
+    height: 2000px;
+    width: 100%;
+    background-color: beige;
+}
+
+.standart , .yüksek{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.card {
+    width: 350px;
+    padding: 20px;
+    background-color: white;
+    border: 1px solid #767676;
+    border-radius: 10px;
+}
+
+
+.card h1 {
+    font-size: 150%;
+    color: #2b2b2b;
+}
+
+.fiyat {
+    margin-top: 10px;
+}
+
+.indirim {
+    display: flex;
+    justify-content: space-between;
+}
+
+.indirim h5 {
+    padding: 5px;
+    background-color: #ffeea9;
+}
+
+.indirim span {
+    text-decoration: line-through;
+}
+
+.anlikfiyat {
+    margin-top: 10px;
+    display: flex;
+    justify-content: left;
+}
+
+.anlikfiyat span {
+    font-size: 16px;
+}
+
+.yenileme {
+    margin-top: 10px;
+}
+
+.card button {
+    margin-top: 15px;
+    height: 40px;
+    width: 100%;
+    background-color: #131313;
+    color: white;
+    border: 0;
+    font-size: 16px;
+}
+
+.card button:hover {
+    animation: satinal 0.3s forwards;
+}
+
+@keyframes satinal {
+    0% {
+
+    }
+
+    100% {
+        scale: 1.05;
+    }
+}
+
+
+.feature ul li {
+    list-style: none;
+    margin-bottom: 5px;
+}
+
+.feature {
+    max-width: 350px;
+}
+
+.feature ul li span {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    font-size: 15px;
+    margin-left: 10px;
+}
+
+.hide {
+    display: none;
+}
+
+
+.wordpress {
+    padding: 30px;
+    background-color: #f5f7f8;
+    margin-left: auto;
+    margin-right: auto;
+    width: 91%;
+    border-radius: 10px;
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.wordpress .b1 h1{
+    margin-top: 10px;
+}
+
+.wordpress .b1 h3 {
+    display: inline;
+    padding: 5px;
+    background-color: aqua;
+}
+
+.b1 {
+    width: 25%;
+}
+
+.b {
+    width: 12%;
+}
+
+.wordpress h5 {
+    margin-top: 10px;
+    font-weight: 600;
+}
+
+.wordpress h6 {
+    margin-top: 10px;
+}
+
+
+.asp {
+    text-align: center;
+    margin-top: 50px;
+    line-height: 100px;
+    font-size: 1.5vw;
+    font-weight: 300;
+    height: 100px;
+    color: #2b2b2b;
+    background-color: #f5f7f8;
+}
+
+.asp a {
+    text-decoration: none;
+    color: black;
+}
+
+.farkimiz {
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 80%;
+    display: flex;
+    justify-content: center;
+}
+
+.sol {
+    max-width: 49%;
+}
+.sol img {
+    width: 40vh;
+}
+.sag img {
+    width: 40vh;
+}
+.sag {
+    max-width: 40%;
+}
+
+.farkimiz h3 {
+    margin-top: 40px;
+    max-width: 83%;
+}
+
+.farkimiz img {
+    margin-top: 60px;
+    border-radius: 10px;
+}
+
+.farkimiz h1 {
+    margin-top: 60px;    
+    max-width: 80%;
+}
+
+.ust {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 40px;
+}
+
+.webhostingh1 {
+    margin-top: 5%;
+    text-align: center;
+}
+
+.kutu {
+    margin: 20px;
+    padding: 40px;
+    width: 500px;
+    border-radius: 20px;
+    height: 500px;
+    margin-bottom: 5px;
+}
+
+.kutu h1 {
+    max-width: 80%;
+    color: #2b2b2b;
+}
+
+.ust1 {
+    background-color: antiquewhite;
+}
+
+.ust2 {
+    background-color: azure;
+}
+
+.ust3 {
+    background-color: aliceblue;
+}
+
+.ust3 h1 {
+    line-height: 50px;
+    margin-top: 100px;
+}
+
+.alt {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.alt1 {
+    background-color: aliceblue;
+}
+
+.alt h1 {
+    max-width: 80%;
+    color: #2b2b2b;
+}
+
+.alt2 {
+    background-color: skyblue;
+}
+
+.kutualt {
+    margin: 20px;
+    padding: 40px;
+    margin-top: 5px;
+    width: 500px;
+    border-radius: 20px;
+    height: 500px;
+}
+
+.kutualt h1 {
+    line-height: 50px;
+    margin-top: 140px;
+}
+
+.büyükkutu {
+    margin: 20px;
+    margin-top: 5px;
+    padding: 40px;
+    width: 500px;
+    border-radius: 20px;
+    height: 500px;
+}
+
+.büyükkutu h1 {
+    line-height: 50px;
+    margin-top: 170px;
+    max-width: 40%;
+}
+.hostingsec h1 {
+    font-size: 40px;
+    margin: 20px;
+    margin-top: 50px;
+    text-align: center;
+}
+.secenekler {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.secenekler h1 {
+    font-size: 4vw;
+}
+
+.secenekler p {
+    max-width: 100%;
+    font-size: 2vw;
+    line-height: 1.5;
+    font-weight: 540;
+}
+
+.yonetilebilir, .sanal {
+    margin-top: 40px;
+    text-align: center;
+    margin-left: 200px;
+    margin-right: 100px;
+    max-width: 680px;
+}
+
+.yonetilebilir h1 , .sanal h1{
+    margin-top: 20px;
+}
+
+.v {
+    margin-top: 20px;
+}
+
+
+.secenekler button {
+    height: 50px;
+    width: 100%;
+    margin-top: 20px;
+    background: none;
+    font-weight: 600;
+    font-size: large;
+}
+
+.rehber {
+    margin-top: 60px;
+    display: flex;
+    justify-content: last baseline;
+    background-color: rgb(168, 178, 228);
+}
+
+.rehber .sol {
+    padding: 100px;
+    width: 50%;
+}
+
+.rehber .sol h6 {
+    line-height: 1.5;
+}
+
+.rehber .sol h6:first-child {
+    font-weight: 600;
+}
+
+.rehber .sag {
+    padding: 30px;
+    width: 50%;
+}
+
+.rehber .sag img {
+    width: 300px;
+}
+
+.rehber .sag h1 {
+    margin-top: 30px;
+    font-family: 'Times New Roman', Times, serif;
+    max-width: 65%;
+    font-size: 5vw;
+}
+
+.rehber .sag p {
+    line-height: 1.5;
+    margin-top: 20px;
+    font-weight: 600;
+    font-size: 12px;
+    color: #2b2b2b;
+}
+
+.rehber .sag button {
+    margin-top: 30px;
+    border-radius: 5px;
+    background-color: #131313;
+    color: aliceblue;
+    font-size: medium;
+    font-weight: 600;
+    height: 50px;
+    width: 200px;
+}
+
+.sorular {
+    cursor: help;
+    width: 100%;
+    display: block;
+}
+
+.s h1 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 2vw;
+    line-height: 1.5;
+    font-weight: 600;
+}
+.s p {
+    line-height: 1.5;
+    font-size: 1.2vw;
+}
+
+.s p:first-child {
+    margin-top: 10px;
+}
+.s {
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+.sorular hr {
+    margin-left: auto;
+    margin-right: auto;
+    color: grey;
+    opacity: 0.6;
+    width: 50%;
+}
+
+.sss .desc{
+    text-align: center;
+    margin: 30px;
+}
+
+.kredikarti {
+    text-align: center;
+    margin-top: 70px;
+}
+
+.kredikarti h1 {
+    margin-left: auto;
+    margin-right: auto;
+    font-family: 'Times New Roman', Times, serif;
+    max-width: 60%;
+    font-weight: bold;
+}
+
+.kredikarti p {
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 15px;
+    line-height: 2;
+    color: #131313;
+    margin-top: 30px;
+    width: 70%;
+}
+
+.uyari {
+    margin-left: 100px;
+    padding: 30px;
+}
+
+.uyari a {
+    color: black;
+}
+
+.uyari p {
+    margin-top: 30px;
+}
+
+.help {
+    background-color: rgb(136, 146, 146);
+    height: fit-content;
+    text-align: center;
+    line-height: 120px;
+}
+
+.help p {
+    font-weight: 500;
+    font-size: 2vw;
+}
+
+footer {
+    background-color: #111111;
+}
+
+.yazi p{
+    margin: 40px;
+    text-align: center;
+    color: white;
+    font-weight: 500;
+    font-size: 25px;
+}
+
+.foot {
+    padding: 60px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.foot h4 {
+    margin: 10px;
+    color: white;
+    font-size: larger;
+    margin-bottom: 20px;
+}
+
+.foot ul li {
+    list-style: none;
+    margin: 10px;
+    margin-bottom: 20px;
+}
+
+.foot ul li a {
+    text-decoration: none;
+    color: rgb(100, 100, 100);
+}
+
+.foot ul li a:hover {
+    text-decoration: underline;
+    color: rgb(100, 100, 100);
+}
+
+.enalt {
+    padding: 40px;
+}
+
+.ustt {
+    display: flex;
+    justify-content: space-between;
+}
+
+.enalt .m{
+    margin: 30px;
+    margin-left: 0;
+    color: white;
+}
+
+.ustt ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+.ustt ul li a {
+    text-decoration: none;
+    color: rgb(100, 100, 100);
+}
+
+.ustt ul li a:hover {
+    text-decoration: underline;
+    color: rgb(100, 100, 100);
+}
+
+.ustt p {
+    color: white;
+    max-width: 80%;
+}
+
+form {
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 40px;
+}
+
+.plans .baslik {
+    text-align: center;
+    margin: 40px;
+}
+
+@media screen and (max-width: 768px) {
+    .farkimiz {
+        margin-top: 50px;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        max-width: 80%;
+        justify-content: center;
+    }
+    
+    .sol {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        max-width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .sol img {
+        display: none;
+    }
+    .sag img {
+        display: none;
+    }
+    .sag {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        max-width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .product {
+        padding: 20px;
+    }
+    
+    .product .info {
+        display: block;
+        justify-content: space-evenly;
+    }
+    
+    .product .info img {
+        border-radius: 10px;
+        width: 100vw;
+        height: 50vw;
+    }
+    
+    .product .info .desc .baslik{
+       font-weight: 600;
+    }
+    
+    .product .info .desc h1 {
+        margin-top: 40px;
+        font-weight: 600;
+        font-size: 45px;
+        color: #2b2b2b;
+    }
+    
+    .product .info .desc h6 {
+        margin-top: 20px;
+        font-size: 15px;
+        font-weight: 600;
+        color: #2b2b2b;
+    }
+}
